@@ -4,7 +4,7 @@
   height: 100vh;
   width: 100%;
   position: relative;
-  
+
 }
 
 .app-container {
@@ -16,8 +16,8 @@
 
 .left-tab,
 .right-tab {
-  background-color: #641864f2;
-  border-right: 1px solid #000000;
+  background-color: #8be5fce8;
+  border-right: 0.5px solid #000000;
   padding: 20px;
   color: rgb(0, 0, 0);
 }
@@ -41,7 +41,7 @@
 }
 
 .interactive-list li:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.274);
   transform: translateY(-2px);
 }
 
@@ -54,7 +54,7 @@
 }
 
 .item-count {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.427);
   border-radius: 50%;
   min-width: 24px;
   height: 24px;
@@ -136,8 +136,8 @@
   position: sticky;
   top: 0;
   padding: 15px;
-  background: linear-gradient(180, rgb(0, 0, 0, 0.1), rgb(0, 0, 255, 0.8));
-  color: rgb(200, 200, 200);
+  background: #8be5fce8;
+  color: rgb(0, 0, 0);
   text-align: center;
   z-index: 1000;
 }
@@ -155,10 +155,11 @@
   /* Padding, prevents messages from hiding behind the input box */
   height: calc(100vh - 130px);
   /* Adjust based on header height + input container height */
-  background-color: #4c4c4c;
+  background-color: #FCFCF9;
   position: relative;
   scroll-behavior: smooth;
   /* Added for smooth scrolling */
+  scrollbar-color: #FCFCF9;
 }
 
 .message {
@@ -177,8 +178,8 @@
 }
 
 .bot-message {
-  background-color: #e5e5ea;
-  color: #333;
+  background-color: #FCFCF9;
+  color: #000000;
   margin-right: auto;
   border-bottom-left-radius: 4px;
 }
@@ -232,10 +233,10 @@
   bottom: 0;
   left: 250px;
   right: 250px;
-  background-color: rgb(133, 131, 131);
+  background-color: #FCFCF9;
   padding: 15px;
-  border-top: 1px solid #000000;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  /*border-top: 1px solid #000000;*/
+  /*box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);*/
   display: flex;
   gap: 10px;
   z-index: 1000;
@@ -255,7 +256,7 @@
   margin-left: 10px;
   padding: 12px 24px;
   background-color: #4a7bff;
-  color: white;
+  color: #FCFCF9;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -290,3 +291,15 @@
   background-color: rgb(74, 123, 255);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
+
+.message-container::-webkit-scrollbar-track {
+  background-color: #FCFCF9;
+  color: #FCFCF9;
+}
+
+.message-container::-webkit-scrollbar-thumb {
+  background-color: #FCFCF9;
+  background: #FCFCF9;
+  color: #FCFCF9;
+}
+
